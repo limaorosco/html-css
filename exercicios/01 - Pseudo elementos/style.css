@@ -1,0 +1,86 @@
+@charset "UFT-8";
+
+body {
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    background-image: linear-gradient(to bottom, #84932467, #FFE0B5);
+    background-attachment: fixed;
+
+}
+
+#tituloprincipal {
+    font-size: 3em;
+    color: #29335C;
+    text-align: center;
+    background-image: radial-gradient(#b1bce9, #818181);
+    max-width: 600px;
+    border-radius: 15px;
+    padding: 5px;
+    margin: auto;
+    border: black;
+}
+
+.titulos {
+    font-size: 1.3em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.titulosalemao{
+    font-size: 1.3em;
+}
+
+.descricaoidiomas {
+    font-style: italic;
+}
+
+.titulosidiomas {
+    text-align: center;
+    font-size: 2em;
+}
+
+.basico::after {
+    content: " ★";
+    color: #028090;
+}
+
+.intermediario::after {
+    content: " ★ ★";
+    color: #028090;
+}
+
+.avancado::after {
+    content: " ★ ★ ★";
+    color: #028090;
+}
+
+.titulosalemao {
+    background-image: radial-gradient(#eb9aa1, #b89d9f);
+}
+
+.titulosingles {
+    background-image:radial-gradient(#ade9f0, #aac3c770);
+}
+
+.cursosextras {
+    text-decoration: underline;
+    margin: auto;
+}
+
+.caixaalemao {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(248, 239, 239);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.caixaingles {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(248, 239, 239);
+    padding: 15px;
+    border-radius: 15px;
+
+}

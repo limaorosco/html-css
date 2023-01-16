@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    background-color: darkkhaki;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: rgb(205, 233, 177);
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px black;
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+}
+
+h1 {
+color: forestgreen;
+
+}
+
+#principal {
+    text-align: center;
+    background-color: bisque;
+}
+
+h2 {
+    color: rgb(71, 76, 153);
+}
+
+.basico {
+    background-color: aquamarine;
+}
+
+.intermediario {
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+.avancado {
+    background-color: rgb(101, 131, 131);
+    color: cornsilk;
+}
+
+p {
+    text-indent: 10px;
+}

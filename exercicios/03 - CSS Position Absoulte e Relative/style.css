@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*
+Exemplo sobre a diferenca entre a propriedade POSITION: ABOSULUTE vs RELATIVE.
+
+Fontes:
+https://codingbff.medium.com/difference-between-css-position-absolute-versus-relative-35f064384c6#:~:text=position%3A%20relative%20places%20an%20element,changing%20the%20layout%20around%20it.
+*/
+
+.parent {
+  border: 2px black dotted;
+  display: inline-block;
+}
+
+.box {
+  display: inline-block;
+  background: red;
+  width: 300px;
+  height: 300px;
+}
+
+#one {
+  position: relative;
+}
+
+#two {
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  background: green;
+}
+
+/*
+- A propriedade POSITION por padrao é STATIC-
+- Nao se pode alterar as propriedade TOP, RIGHT, BOTTOM e LEFT com o STATIC setado.
+
+POSITION (propriedade): RELATIVE (valor)
+- Move um elemento sem alterar o layout que está em volta dele.
+- É deixado uma lacuna onde o elemento estava originalmente.
+- RELATIVO significa relativo a posicao normal. O elemento tem relacao com sua posicao original.
+- O elemento é posicionado em relacao a si mesmo.
+
+POSITION (propriedade): ABSOLUTE (valor)
+- O elemento tem sua posicao relacionada a de seu elemento PAI (nesting)
+- O elemento é posicionado automaticamente com relacao ao ponto inicial (canto superior esquerdo) do elemento pai.
+- Se o elemento nao tiver um pai, o elemento <html> será definido como o pai.
+- O elemento é removido do fluxo normal do documento, isto é, os outros elementos serao afetados e se comportam como se o elemento tivesse sido completamente removido da página web.
+
+*/
+
+
+
