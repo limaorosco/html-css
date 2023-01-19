@@ -12,11 +12,10 @@
 
       /* Shorthand
       
-        Background:
-        color > image > position > repeat > [size]* > attachment
-        * O backcground-size está no manual mas nao funciona na shorthand. Talvez funcione no futuro.
+        Background: color > image > position / size* > repeat > attachment
 
-        
+        * A barra antes do SIZE necessária para que a Shorthand funcione.
+       
         background-color: black;
         background-image: url(imagens/wallpaper002.jpg);
         background-position: center;
@@ -26,8 +25,7 @@
         
         */
     
-      background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
-      background-size: cover;
+      background: black url('imagens/wallpaper002.jpg') center center / cover no-repeat fixed;
 
     }
 
