@@ -4,21 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste de imagem de fundo</title>
+  <title>Fundo Fixo de Tela</title>
   <style>
 
     body {
       height: 100vh;
-      background-color: black;
-      background-image: url(imagens/wallpaper002.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
+
+      /* Shorthand
+      
+        Background:
+        color > image > position > repeat > [size]* > attachment
+        * O backcground-size está no manual mas nao funciona na shorthand. Talvez funcione no futuro.
+
+        
+        background-color: black;
+        background-image: url(imagens/wallpaper002.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+        */
+    
+      background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
       background-size: cover;
+
     }
 
     main {
       background-color: white;
-      width: 400px;
+      max-width: 400px;
       padding: 10px;
       margin: auto;
       border: 1px solid darkblue;
@@ -31,8 +46,9 @@
   <main>
     <h1>Teste de Imagem de Fundo</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem natus porro similique quaerat in doloribus unde dolores debit+oris quhjhhjhhhhhhhhhhhhhhhhghjhgjhgjhgjhgjhgj jhghjhos sint soluta eos veritatis impedit dignissimos modi non magni. A asperiores sed quod voluptate qui, mi+nditiis deleniti recusandae eligendi neque fugiat vel iure voluptas, quia provident ratione numquam tempora suscipit officia, similique odit quo! Aliquid natus aliquam qui tenetur, incidunt odit suscipit quo consequuntur saepe eos optio officia? Repellendus illum ratione in debitis! Tenetur optio accusantium et laboriosam consequuntur a nulla quas eaque aut iure?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem natus porro similique quaerat in doloribus unde dolores debit+oris quhjhhjhhhhhhhhhhhhhhhhghjhgjhgjhgjhgjhgj jhghjhos sint soluta eos veritatis impedit dignissimos modi non magni. A asperiores sed quod voluptate qui, mi+nditiis deleniti recusandae eligendi neque fugiat vel iure voluptas, quia provident ratione numquam tempora suscipit officia, similique odit quo! Aliquid natus aliquam qui tenetur, incidunt odit suscipit quo consequuntur saepe eos optio officia? Repellendus illum ratione in debitis! Tenetur optio accusantium et laboriosam consequuntur a nulla quas ealorque aut iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium porro voluptatum excepturi fugiat ipsum consectetur voluptatem, a qui autem libero placeat recusandae dolore id molestias numquam illo earum ad quia obcaecati non corrupti fuga? Minus praesentium earum placeat nisi culpa perspiciatis deserunt unde rem corporis quo illo eum ex sit, doloremque fugiat, labore quidem explicabo architecto voluptate, laudantium assumenda? Eos, animi veritatis alias expedita qui praesentium itaque voluptate consequuntur delectus saepe. Veniam suscipit animi iure dolor porro? Necessitatibus laborum, esse nulla suscipit excepturi consequatur eligendi corporis fugit eveniet, facere, ratione magni dolores a animi amet earum at ipsa. Consectetur placeat assumenda pariatur adipisci sed aut vitae corporis tempora alias commodi autem eius nostrum temporibus, fugiat dolore illo eaque, aliquid velit qui culpa ipsam incidunt, harum mollitia laboriosam. Laboriosam repudiandae excepturi temporibus, dolorem nulla maiores explicabo architecto libero. Eum quaerat, sint minima doloribus, eaque mollitia error in minus reprehenderit, nesciunt ex. Accusantium, blanditiis veritatis veniam deserunt maxime eum illum distinctio reiciendis? Necessitatibus eveniet magni, accusantium quia ratione non modi illo atque velit saepe nesciunt, dicta hic debitis sapiente maiores, quam harum cum nostrum odio neque quidem maxime porro excepturi id. Atque numquam ab dolor exercitationem ipsum doloremque autem iure laborum amet.
       </p>
+
   </main>
 </body>
 </html>
