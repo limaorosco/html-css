@@ -26,18 +26,30 @@
     }
 
     img {
-      position: relative
-      ;
+      max-width: 100%;
+      position: relative;
     }
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 3em;
+    }
+
 
 
   </style>
 </head>
 
 <body>
-
+  <h1>Enjoy the Cosmos</h1>
   <div id="caixa">
-    <img src="imagens/astronauta.png" alt="Astronauta voado pelo espaco">
+
+    <picture>
+      <source media="(max-width: 600px)" srcset="imagens\astronauta-pq.png">
+      <source media="(max-width: 1100px )" srcset="imagens\astronauta.png">
+      <img src="imagens/astronauta-gd.png" alt="Astronauta voado pelo espaco">
+    </picture>
   </div>
   
 </body>
