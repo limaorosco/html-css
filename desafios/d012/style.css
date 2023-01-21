@@ -54,6 +54,10 @@ a {
   font-weight: bold;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 pre {
   white-space: pre-line;
 }
