@@ -1,18 +1,20 @@
 @charset "UTF-8";
 
 * {
-  margin: 0px;
   padding: 0px;
+  border: 0px;
+  margin: 0px;
+
   font-family: Arial, Helvetica, sans-serif;
 }
 
 html, body {
   height: 100vh;
   width: 100vw;
-  background-color: black;
 }
 
 body {
+  background-color: black;
   background-image: url(../imagens/fundo-madeira.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -35,4 +37,12 @@ section#telefone {
   width: 311px;
   background-image: url(../imagens/frame-iphone.png);
   background-repeat: no-repeat;
+}
+
+iframe#tela {
+  position: relative;
+  top: 81px;
+  left: 24px;
+  width: 264px;
+  height: 470px;
 }
