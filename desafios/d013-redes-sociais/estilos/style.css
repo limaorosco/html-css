@@ -2,7 +2,6 @@
 
 * {
   padding: 0px;
-  border: 0px;
   margin: 0px;
 
   font-family: Arial, Helvetica, sans-serif;
@@ -11,6 +10,11 @@
 html, body {
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden; 
+  /* 
+  - quando a altura da tela é menor do que a imagem de fundo do telefone, as barras de rolagem lateral e inferior sao habilidadas.
+  - overflow-x: hidden: escondi a barra de rolagem lateral quando a altura da tela for menor que o telefone!
+  */
 }
 
 body {
@@ -45,4 +49,23 @@ iframe#tela {
   left: 24px;
   width: 264px;
   height: 470px;
+}
+
+section#redes-sociais {
+  float: right;
+  /* text-align: right - também funcionaria como o float */
+}
+
+section#redes-sociais img {
+  width: 50px;
+  margin: 10px 20px 10px 10px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.527);
+}
+
+section#redes-sociais img:hover {
+  outline: 3px solid hsla(0, 0%, 100%, 0.6);
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 06);
+  transition: transform 0.3s, outline 0.2s;
 }
