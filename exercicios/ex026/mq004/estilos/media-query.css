@@ -1,3 +1,72 @@
 @charset "UTF-8";
 
 /* Todas as demais mídias */
+
+/*
+Typical Device Breakpoints
+
+Pequenas telas:      até 600px
+Celular:             de 600px até 768px
+Tablets:             de 769px até 992px
+Desktops:            de 993px até 1200px
+Grandes telas:       acima de 1201px
+*/
+
+
+/*
+Pequenas telas e Celular já foram configuradas no arquivo "style.css" com o conceito de Mobile First. Ou seja, agora só é necessário criar media queries para os outros tamanhos de tela.
+*/
+
+/* Versão para impressão */
+@media print {
+
+}
+
+/* Tablets */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+  body {
+    background-image: url(../imagens/back-tablet.jpg);
+  }
+
+  img#phone { display: none; }
+  img#tablet { display: block ; }
+  img#print { display: none; }
+  img#pc { display: none; }
+  img#tv { display: none; }
+
+}
+
+/* Desktops */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+  body {
+    background-image: url(../imagens/back-pc.jpg);
+  }
+  
+  img#phone { display: none; }
+  img#tablet { display: none ; }
+  img#print { display: none; }
+  img#pc { display: block; }
+  img#tv { display: none; }
+
+}
+
+/* Grandes telas */
+@media screen and (min-width: 1200px) {
+
+  body {
+    background-image: url(../imagens/back-tv.jpg);
+  }
+
+  main {
+    width: 90vw;
+  }
+   
+  img#phone { display: none; }
+  img#tablet { display: none ; }
+  img#print { display: none; }
+  img#pc { display: none; }
+  img#tv { display: block; }
+
+}
