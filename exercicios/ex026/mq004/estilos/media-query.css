@@ -20,7 +20,36 @@ Pequenas telas e Celular já foram configuradas no arquivo "style.css" com o con
 /* Versão para impressão */
 @media print {
 
+* {
+  font-family: 'Courier New', Courier, monospace;
 }
+
+body {
+  background-image: url(../imagens/back-print.jpg); /* Desnecessário: imagens de fundo nao sao impressas */
+}
+
+main {
+  border: 2px solid black;
+}
+
+main::after {
+  content: 'Essa impressao foi feita através do site www.cursoemvideo.com';
+  text-decoration: overline;
+}
+
+main h1 {
+    text-shadow: none;
+    color: black;
+  }
+
+  img#phone { display: none; }
+  img#tablet { display: none ; }
+  img#print { display: block; }
+  img#pc { display: none; }
+  img#tv { display: none; }
+    
+}
+
 
 /* Tablets */
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -57,10 +86,6 @@ Pequenas telas e Celular já foram configuradas no arquivo "style.css" com o con
 
   body {
     background-image: url(../imagens/back-tv.jpg);
-  }
-
-  main {
-    width: 90vw;
   }
    
   img#phone { display: none; }
