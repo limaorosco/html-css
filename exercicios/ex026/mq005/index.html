@@ -11,8 +11,9 @@
     Este é mais um CSS adicionado no projeto, porém vindo do Google.
   -->
   <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
   <header>
 
     <h1>Meu Site</h1>
@@ -43,8 +44,20 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium veniam nulla eligendi. Reiciendis mollitia quas tempora aut animi, exercitationem ipsa corrupti. Quo adipisci neque doloribus odio veritatis nihil minima ipsum, repudiandae cupiditate magni voluptate fugit autem iste voluptatem, nobis natus in laboriosam enim alias earum, quia quisquam repellendus! Consectetur distinctio nisi vel commodi delectus corrupti quam quis dignissimos obcaecati maiores, quaerat accusamus doloribus repellendus vitae fugiat tempora aut soluta illum expedita. Eveniet adipisci exercitationem fugit minus, repellendus natus aliquam ducimus maxime dolorem temporibus odit aliquid dolore sint accusamus qui soluta? Impedit, delectus. Quasi omnis deserunt molestias alias asperiores? Sed.</p>
     </article>
   </main>
+  <!-- Script local de JavaScript para forcar o display= block ou none ao se redimensional uma janela -->
+
   <!-- Script local de JavaScript para o menu tipo hamburguer -->
+  
   <script>
+
+    function mudouTamanho() {
+      if (window.innerWidth >= 768) {
+        navegacao.style.display = 'block'
+      } else {
+        navegacao.style.display = 'none'
+      }
+    }
+
     function clickMenu() {
       if (navegacao.style.display == 'block') {
         navegacao.style.display = 'none'
