@@ -5,12 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media Query Guanabara</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> <!-- Símbolo de menu importado do Google Fonts -->
   <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
   <header>
+
     <h1>Meu Site</h1>
-    <nav>
+
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <!-- Símblo de menu importado do Google Fonts -->
+    <!-- JavaScript inserido dentro da tag <span> que contém o ícone que será utilizado para o menu. onclick="clickmenu()" -->
+    <!-- As letras maiúsculas fazem toda a diferenca no JS, como em clickMenu -->
+
+    <nav id="navegacao">
       <ul>
         <li><a href="#">Opcao 1</a></li>
         <li><a href="#">Opcao 2</a></li>
@@ -31,5 +39,15 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium veniam nulla eligendi. Reiciendis mollitia quas tempora aut animi, exercitationem ipsa corrupti. Quo adipisci neque doloribus odio veritatis nihil minima ipsum, repudiandae cupiditate magni voluptate fugit autem iste voluptatem, nobis natus in laboriosam enim alias earum, quia quisquam repellendus! Consectetur distinctio nisi vel commodi delectus corrupti quam quis dignissimos obcaecati maiores, quaerat accusamus doloribus repellendus vitae fugiat tempora aut soluta illum expedita. Eveniet adipisci exercitationem fugit minus, repellendus natus aliquam ducimus maxime dolorem temporibus odit aliquid dolore sint accusamus qui soluta? Impedit, delectus. Quasi omnis deserunt molestias alias asperiores? Sed.</p>
     </article>
   </main>
+  <!-- Script loca de JavaScript para o menu tipo hamburguer -->
+  <script>
+    function clickMenu() {
+      if (navegacao.style.display == 'block') {
+        navegacao.style.display = 'none'
+      } else {
+        navegacao.style.display = 'block'
+      }
+    }
+  </script>
 </body>
 </html>
