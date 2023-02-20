@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body {
+  background-color: black;
+}
+
+main {
+  height: 280px;
+  width: 80vw;
+}
+
+div#imagem {
+  position: absolute;
+  height: 280px;
+  width: 30vw;
+  border-radius: 20px 0px 0px 20px;
+}
+
+div#formulario {
+  position: absolute;
+}
+
+form > div {
+  text-align: right;
+  height: 40px;
+  margin: 0px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+form > div > #iemail, #isenha {
+  background-color: var(--cor05);
+  height: 35px;
+  width: 195px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2px;
+}
